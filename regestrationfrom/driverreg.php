@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Driver Registration Form</title>
+</head>
+<body>
+
+    <h1>Driver Registration Form</h1>
+
+    <form action="register_process.php" method="POST">
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <td>*Applicant's Name :</td>
+                <td><input type="text" name="applicant_name" required></td>
+            </tr>
+            <tr>
+                <td>Father/Husband's Name:</td>
+                <td><input type="text" name="father_husband_name"></td>
+            </tr>
+            <tr>
+                <td>Mother's Name:</td>
+                <td><input type="text" name="mother_name"></td>
+            </tr>
+            <tr>
+                <td>*Nationality:</td>
+                <td><input type="text" name="nationality"></td>
+            </tr>
+            <tr>
+                <td>*Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Woman
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>*Date of Birth:</td>
+                <td>
+                    <input type="text" name="dob_day" placeholder="Day" size="5"> 
+                    <input type="text" name="dob_month" placeholder="months" size="5"> 
+                    <input type="text" name="dob_year" placeholder="year" size="7">
+                </td>
+            </tr>
+            <tr>
+                <td>*National ID:</td>
+                <td> 
+                    <input type="text" name="id_number" placeholder="Enter ID Number">
+                </td>
+            </tr>
+            <tr>
+                <td>*Driving License:</td>
+                <td>
+                     
+                    <input type="text" name="id_number" placeholder="Enter ID Number">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Driving Experience (Years):</td>
+                <td><input type="number" name="experience"  placeholder="Enter years of experience"></td>
+            </tr>
+            <tr>
+                <td>*Mobile Number:</td>
+                <td><input type="text" name="mobile" required></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea name="address" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Others info(if any):</td>
+                <td><textarea name="other_info" rows="3"></textarea></td>
+            </tr>
+        </table>
+
+        <p>
+        I hereby certify that the information provided is correct. The information provided will be stored in the digital database and used for research purposes.
+        </p>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

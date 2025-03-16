@@ -40,9 +40,9 @@
             <tr>
                 <td>*Date of Birth:</td>
                 <td>
-                    <input type="text" name="dob_day" placeholder="Day" size="5"> 
+                    <input type="number" name="dob_day" placeholder="Day" size="5"> 
                     <input type="text" name="dob_month" placeholder="Months" size="5"> 
-                    <input type="text" name="dob_year" placeholder="Year" size="7">
+                    <input type="number" name="dob_year" placeholder="Year" size="7">
                 </td>
             </tr>
             <tr>
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td>*Mobile Number:</td>
-                <td><input type="text" name="mobile" required></td>
+                <td><input type="number" name="mobile" required></td>
             </tr>
             <tr>
                 <td>Address :</td>

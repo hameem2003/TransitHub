@@ -1,6 +1,0 @@
-<html>
-    <head></head>
-    <body>
-    <h1>Your data has been submitted</h1>    
-    <body>
-    </html>

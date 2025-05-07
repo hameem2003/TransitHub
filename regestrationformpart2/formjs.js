@@ -1,5 +1,8 @@
 function data()
     {
+        let errorSpans = document.querySelectorAll("span");
+    errorSpans.forEach(span => span.innerHTML = "");
+    
     var a=document.getElementById("aname").value;
     var b=document.getElementById("fh_name").value;
     var c=document.getElementById("nationality").value;
@@ -14,45 +17,46 @@ function data()
 
     if(a==""||b==""||c==""||d==""||e==""||f==""||g==""||h==""||i=="")
     {
-        alert("All Fields are mendatory");
+        document.getElementById("error").innerHTML ="All Fields are mendatory";
         return false;
     }
-    else if (!isNaN(a)) {
+     if (!isNaN(a)) {
     document.getElementById("a_error").innerHTML = "Name must contain only letters.";
     return false;
     }
-    else if (!isNaN(b)) {
+     if (!isNaN(b)) {
         document.getElementById("fh_name_error").innerHTML = "Name must contain only letters.";
         return false;
     }
-    else if (!isNaN(c)) {
+     if (!isNaN(c)) {
         document.getElementById("nationality_error").innerHTML = "Nationality must contain only letters.";
         return false;
     }
-    else if (!(d == "man" || d == "woman" || d == "others")) {
+     if (!(d == "man" || d == "woman" || d == "others")) {
         document.getElementById("gender_error").innerHTML = "Gender must be 'Man', 'Woman', or 'Others'.";
         return false;
     }
-    else if(g.length<11||g.length>11)
+    if(g.length<11||g.length>11)
     {
         document.getElementById("mnumber_error").innerHTML = "Mobile number must be exactly 11 digits.";
         return false;
     }
-    else if (isNaN(g)) {
+     if (isNaN(g)) {
     document.getElementById("mnumber_error").innerHTML = "Mobile number contain only  number.";
     return false;
     }
-    else if (pass.length < 6) {
+     if (isNaN(f)) {
+        document.getElementById("nidnum_error").innerHTML = "NID number contain only  number.";
+        return false;
+        }
+     if (pass.length < 6) {
             document.getElementById("password_error").innerHTML = "Password must be at least 6 characters long.";
             return false;
     }
-    else if (pass !== cpass) {
+     if (pass !== cpass) {
             document.getElementById("cpassword_error").innerHTML = "Passwords do not match.";
             return false;
         }
-    else
-    {
-    true;
+    return true;
 
-    }
     }
